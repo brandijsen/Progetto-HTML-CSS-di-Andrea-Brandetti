@@ -6,75 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Brandetti - Frontend Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("0Q8o_P98a2Aoo14Wy");
+        })();
+    </script>
 </head>
 
 <body>
-    <nav class="desktop-nav">
-        <div class="logo">
-            Andrea Brandetti
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+
 
     <section id="home">
-        <div class="pic_container">
-            <img src="./assets/photo.jpg" alt="Andrea-Brandetti Photo" class="profile-pic">
-        </div>
-        <div class="resume-container">
-            <div class="resume-text">
-                <p>Hello, I'm</p>
-                <h1>Andrea Brandetti</h1>
-                <p>Frontend Developer</p>
+        <nav class="desktop-nav">
+            <div class="logo">
+                Andrea Brandetti
             </div>
-            <div class="home-links">
+            <div>
+                <ul class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-content">
+            <div class="pic-container">
+                <img src="./assets/photo.jpg" alt="Andrea-Brandetti Photo" class="profile-pic">
+            </div>
 
-                <div class="social-icons">
-                    <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="">
-                    <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="">
+            <div class="resume-container">
+                <div class="resume-text">
+                    <p>Hello, I'm</p>
+                    <h1>Andrea Brandetti</h1>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="home-links">
+                    <div class="social-icons">
+                        <i class="fa-brands fa-instagram fa-lg"></i>
+                        <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                        <i class="fa-brands fa-github fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <div class="title">
+            <h1>About Me</h1>
+        </div>
+        <div class="about-container">
+            <div class="pic-container">
+                <img src="./assets/photo.jpg" alt="" class="profile-pic">
+            </div>
+            <div class="about-details">
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quos inventore sed unde placeat
+                        nobis
+                        repudiandae ducimus culpa, assumenda eveniet ad ratione error mollitia, ipsum quibusdam nisi
+                        illum
+                        esse
+                        eligendi.</p>
+
+                </div>
+                <div class="tab-titles">
+                    <a class="tab-links active-link" onclick="opentab('skills')">Skills</a>
+                    <a class="tab-links" onclick="opentab('education')">Education</a>
+                    <a class="tab-links" onclick="opentab('experience')">Experience</a>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>REACT</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>educ</li>
+                        <li>educ</li>
+                        <li>educ</li>
+                        <li>educ</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>expe</li>
+                        <li>expe</li>
+                        <li>expe</li>
+                        <li>expe</li>
+                    </ul>
+                </div>
+
+
+                <div class="button-container">
+                    <button href="" target="_blank">Download CV</button>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="about">
-        <div class="pic_container">
-            <img src="./assets/photo.jpg" alt="" class="profile-pic">
-        </div>
-        <div class="description">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quos inventore sed unde placeat nobis
-                repudiandae ducimus culpa, assumenda eveniet ad ratione error mollitia, ipsum quibusdam nisi illum esse
-                eligendi.</p>
-
-            <div class="details">
-                <h3><a href="javascript:void(0);" onclick="showContent('skills')">Skills</a></h3>
-                <h3><a href="javascript:void(0);" onclick="showContent('education')">Education</a></h3>
-                <h3><a href="javascript:void(0);" onclick="showContent('experience')">Experience</a></h3>
-            </div>
-            <div class="tab-content" id="skills" style="display: block;">
-                <p>skillllllllllllllllllllllllll</p>
-            </div>
-            <div class="tab-content" id="education">
-                <p>educationnnnnnnnnnnnnnnnnnn</p>
-            </div>
-            <div class="tab-content" id="experience">
-                <p>experienceeeeeeeeeeeeeeeeeee</p>
-            </div>
-
+    <section id="projects">
+        <div class="title">
+            <h1>My Projects</h1>
         </div>
 
+        <div class="projects-container">
+            <div class="project">
+                <h2>CityScore</h2>
+                <img class="project-img" src="./assets/photo.jpg" alt="project1">
+
+                <div class="project-btn_container">
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Open
+                    </button>
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>GreenTable</h2>
+                <img class="project-img" src="./assets/photo.jpg" alt="project2">
+
+                <div class="project-btn_container">
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Open
+                    </button>
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Project one</h2>
+                <img class="project-img" src="./assets/photo.jpg" alt="project3">
+                <div class="project-btn_container">
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Open
+                    </button>
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Project one</h2>
+                <img class="project-img" src="./assets/photo.jpg" alt="project">
+                <div class="project-btn_container">
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Open
+                    </button>
+                    <button class="project-btn" onclick="window.open('https://github.com/')">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </section>
+    <section id="contact">
+
+        <div class="title">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-container">
+            <div class="contact-details">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa doloribus fuga qui facere
+                    deserunt cumque officiis officia corrupti minus, vitae, adipisci commodi velit voluptatibus iusto ad
+                    fugit laborum amet?</p>
+                <li><i class='fa-solid fa-at' style="color: gold;"></i>andrebrandet93@gmail.com</li>
+                <li><i class="fa-solid fa-phone" style="color: gold;"></i>339 *******</li>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                    <i class="fa-brands fa-github fa-lg"></i>
+                </div>
+            </div>
+            <div class="contact-form">
+                <input type="text" id="name" class="form-name" placeholder="Enter your name" required>
+                <input type="text" id="email" class="form-email" placeholder="Enter your email" required>
+                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                <button class="form-button" onclick="sendMail()">Send</button>
+
+            </div>
+        </div>
+        <footer>
+            Andrea Brandetti Frontend Developer
+        </footer>
+    </section>
+
     <script src="script.js"></script>
 </body>
 
