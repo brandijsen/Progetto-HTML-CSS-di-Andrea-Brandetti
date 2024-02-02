@@ -34,6 +34,22 @@
                 </ul>
             </div>
         </nav>
+        <nav class="hamburger-nav">
+            <div class="logo">Andrea Brandetti</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <a href="#home" onclick="toggleMenu()">Home</a>
+                    <a href="#about" onclick="toggleMenu()">About</a>
+                    <a href="#projects" onclick="toggleMenu()">Projects</a>
+                    <a href="#contact" onclick="toggleMenu()">Contact</a>
+                </div>
+            </div>
+        </nav>
         <div class="main-content">
             <div class="pic-container">
                 <img src="./assets/photo.jpg" alt="Andrea-Brandetti Photo" class="profile-pic">
@@ -45,16 +61,17 @@
                     <h1>Andrea Brandetti</h1>
                     <p>Frontend Developer</p>
                 </div>
-                <div class="home-links">
+                <div class="links-container">
                     <div class="social-icons">
                         <i class="fa-brands fa-instagram fa-lg"></i>
                         <i class="fa-brands fa-linkedin-in fa-lg"></i>
                         <i class="fa-brands fa-github fa-lg"></i>
                     </div>
+                    <button class="cv-btn" href="" target="_blank">Download CV</button>
+
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="about">
@@ -68,14 +85,14 @@
             </div>
             <div class="about-details">
                 <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quos inventore sed unde placeat
-                        nobis
-                        repudiandae ducimus culpa, assumenda eveniet ad ratione error mollitia, ipsum quibusdam nisi
-                        illum
-                        esse
-                        eligendi.</p>
+                    <p>Hello! I'm a frontend developer looking for job opportunities, with a strong motivation to
+                        improve and grow. Here you
+                        can find my projects and links to my social profiles. If you want to get to know me better,
+                        download my CV and feel free
+                        to contact me.</p>
 
                 </div>
+
                 <div class="tab-titles">
                     <a class="tab-links active-link" onclick="opentab('skills')">Skills</a>
                     <a class="tab-links" onclick="opentab('education')">Education</a>
@@ -84,32 +101,36 @@
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li>HTML</li>
+                        <p>Medium</p>
                         <li>CSS</li>
+                        <p>Medium</p>
                         <li>JAVASCRIPT</li>
+                        <p>Basic</p>
                         <li>REACT</li>
+                        <p>Basic</p>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li>educ</li>
-                        <li>educ</li>
-                        <li>educ</li>
-                        <li>educ</li>
+                        <li>2023 - Current</li>
+                        <p>Start To Impact University (on-line course)</p>
+                        <li>2015</li>
+                        <p>EVS on "La Rotllana Associaciò" Barcelona</p>
+                        <li>2008-2012</li>
+                        <p>ITC "E. Mattei" Amandola</p>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
-                    <ul>
-                        <li>expe</li>
-                        <li>expe</li>
-                        <li>expe</li>
-                        <li>expe</li>
-                    </ul>
+
+                    <p>I'm looking for my first job as developer, but you can take a look to some projects that i
+                        worked on
+                        by myself</p>
+
+
                 </div>
 
 
-                <div class="button-container">
-                    <button href="" target="_blank">Download CV</button>
-                </div>
+
             </div>
         </div>
     </section>
@@ -145,30 +166,8 @@
                     </button>
                 </div>
             </div>
-            <div class="project">
-                <h2>Project one</h2>
-                <img class="project-img" src="./assets/photo.jpg" alt="project3">
-                <div class="project-btn_container">
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Open
-                    </button>
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Github
-                    </button>
-                </div>
-            </div>
-            <div class="project">
-                <h2>Project one</h2>
-                <img class="project-img" src="./assets/photo.jpg" alt="project">
-                <div class="project-btn_container">
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Open
-                    </button>
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Github
-                    </button>
-                </div>
-            </div>
+
+
         </div>
 
     </section>
@@ -179,9 +178,9 @@
         </div>
         <div class="contact-container">
             <div class="contact-details">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa doloribus fuga qui facere
-                    deserunt cumque officiis officia corrupti minus, vitae, adipisci commodi velit voluptatibus iusto ad
-                    fugit laborum amet?</p>
+                <p>Did you like my work? Let me know what you think. Use the form below, I would be happy to answer and
+                    connect with you to
+                    work together! </p>
                 <li><i class='fa-solid fa-at' style="color: gold;"></i>andrebrandet93@gmail.com</li>
                 <li><i class="fa-solid fa-phone" style="color: gold;"></i>339 *******</li>
                 <div class="social-icons">

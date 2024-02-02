@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(35, 35, 35);
   color: white;
   list-style: none;
 }
@@ -42,17 +42,39 @@ body {
   color: gold;
 }
 
+/* Hamburger Nav */
+
+.hamburger-nav {
+  display: none;
+}
+
 /* Section */
 
 section {
   height: 96vh;
-  margin: 0 10rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
 
 section h1 {
   color: gold;
+}
+
+/* Buttons */
+
+button {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: gold;
 }
 
 /* Home */
@@ -93,37 +115,26 @@ section h1 {
   text-align: center;
 }
 
-.home-links {
+.links-container {
   display: flex;
   flex-direction: column;
+}
+.social-icons {
   align-self: center;
   text-align: center;
-}
-
-.social-icons {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
   cursor: pointer;
 }
 
+.cv-btn {
+  height: 30px;
+  margin-top: 2rem;
+}
+
 i:hover {
   color: gold;
-}
-
-/* Buttons */
-
-button {
-  background-color: white;
-  cursor: pointer;
-  color: black;
-  border-radius: 6px;
-  border: none;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: gold;
 }
 
 /* About */
@@ -131,11 +142,14 @@ button:hover {
 #about {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 .title {
-  display: flex;
-  flex-direction: row;
   align-items: center;
+}
+
+.description {
+  text-align: justify;
 }
 
 .title h1 {
@@ -157,15 +171,23 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
+  min-height: 400px;
 }
 
 #about .pic-container {
   margin-right: 3rem;
+  height: 100%;
+}
+
+#about .profile-pic {
+  height: 350px;
+  width: 400px;
 }
 
 .about-details {
   display: flex;
   flex-direction: column;
+  min-height: 400px;
 }
 
 .tab-titles {
@@ -188,6 +210,14 @@ button:hover {
 
 .tab-contents {
   display: none;
+  font-size: 14px;
+  width: 500px;
+  height: 100%;
+  overflow: auto;
+}
+
+.tab-contents li {
+  color: gold;
 }
 
 .tab-contents.active-tab {
@@ -199,9 +229,19 @@ button:hover {
 
 /* Projects */
 
+#projects {
+  margin-top: 5rem;
+}
+
 .projects-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-img {
@@ -210,22 +250,38 @@ button:hover {
   border-radius: 10px;
   cursor: pointer;
 }
+.project-btn_container {
+  display: flex;
 
-.project-img:hover {
-  background-color: blue;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 3rem;
 }
 
 .project-btn {
   font-weight: bold;
+  height: 30px;
+  width: 60px;
 }
 
 /* Contact */
+
+#contact {
+  margin-top: 5rem; /* Aggiunto spazio tra le sezioni */
+}
 
 .contact-container {
   display: flex;
   flex-direction: row;
 }
 
+.contact-details {
+  margin-right: 70px;
+}
+
+#contact p {
+  text-align: justify;
+}
 .contact-details li i {
   margin-right: 10px;
 }
@@ -238,10 +294,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 .contact-form input,
 textarea {
+  resize: none;
   background: rgb(45, 45, 45);
   width: 100%;
   border: 0;
@@ -256,6 +314,8 @@ textarea {
 
 .contact-form button {
   margin-top: 10px;
+  height: 30px;
+  width: 80px;
 }
 
 /* Footer */
