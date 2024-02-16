@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -23,7 +23,6 @@ body {
   left: 0;
   width: 100%;
   padding: 1.3rem 10%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +46,7 @@ body {
   color: gold;
   text-decoration: none;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .navbar a {
@@ -88,32 +88,32 @@ section {
   min-height: fit-content;
 }
 
-section .title {
+.title {
   margin-bottom: 50px;
-}
-section h1 {
   color: gold;
-}
-
-.title h1 {
   text-align: center;
+  font-weight: 700;
+  font-size: 21.3px;
+  letter-spacing: 1px;
 }
 
 /* Buttons */
 
 button {
-  background-color: white;
+  background-color: gold;
   cursor: pointer;
-  color: black;
+  color: rgb(75, 75, 75);
+  height: 30px;
+  font-size: 16px;
   border-radius: 10px;
   border: none;
   font-weight: bold;
   transition: 0.3s;
-  border: 2px solid;
+  letter-spacing: 0.5px;
 }
 
 button:hover {
-  background-color: gold;
+  background-color: white;
 }
 
 /* Home */
@@ -147,6 +147,7 @@ button:hover {
   text-align: center;
   height: 100%;
   padding: 30px;
+  align-items: center;
 }
 
 .resume-text {
@@ -167,8 +168,8 @@ button:hover {
 }
 
 .cv-btn {
-  height: 30px;
   margin-top: 2rem;
+  width: 180px;
 }
 
 i:hover {
@@ -186,10 +187,12 @@ i:hover {
 
 .title {
   align-items: center;
+  letter-spacing: 1px;
 }
 
 .description {
   text-align: justify;
+  font-size: 18px;
 }
 
 .about-container {
@@ -217,6 +220,7 @@ i:hover {
 .tab-titles {
   display: flex;
   flex-direction: row;
+  margin-top: 30px;
   gap: 3rem;
   justify-content: center;
 }
@@ -227,6 +231,7 @@ i:hover {
   cursor: pointer;
   font-size: 22px;
   transition: 0.3s;
+  letter-spacing: 0.7px;
 }
 
 .tab-links:hover,
@@ -236,6 +241,8 @@ i:hover {
 
 .tab-contents {
   display: none;
+  margin-left: 80px;
+  margin-top: 20px;
   font-size: 14px;
   width: 500px;
   height: 100%;
@@ -243,6 +250,12 @@ i:hover {
 
 .tab-contents li {
   color: gold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.tab-contents p {
+  font-size: 16px;
 }
 
 .tab-contents.active-tab {
@@ -265,13 +278,24 @@ i:hover {
   align-items: center;
 }
 
+.project h2 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
 .project-img {
   width: 50%;
   height: 70%;
   border-radius: 10px;
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid white;
 }
+
+.project-img:hover {
+  border-color: gold;
+  transition: 0.3s;
+}
+
 .project-btn_container {
   display: flex;
 
@@ -283,7 +307,7 @@ i:hover {
 .project-btn {
   font-weight: bold;
   height: 30px;
-  width: 60px;
+  width: 80px;
 }
 
 /* Contact */
@@ -299,8 +323,11 @@ i:hover {
 
 #contact p {
   text-align: justify;
+  font-size: 18px;
 }
+
 .contact-details li i {
+  margin-top: 10px;
   margin-right: 10px;
 }
 
@@ -308,6 +335,70 @@ i:hover {
   margin-top: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  text-align: center;
+}
+
+.field .item {
+  width: 100%;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px 0;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  caret-color: gold;
+}
+
+.field .item:hover {
+  border-color: gold;
+}
+
+.field .item:focus {
+  outline: none;
+}
+
+.field.error .item {
+  border-color: gold;
+}
+
+.field .item::placeholder {
+  color: rgb(167, 167, 167);
+}
+
+.field .error-txt {
+  font-size: 14px;
+  color: gold;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.field.error .error-txt {
+  display: block;
+}
+
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
+
+form button {
+  width: 170px;
+}
+
+/*
+.field .item:hover {
+  border: 2px solid gold;
+  transition: 0.3s;
+}
+*/
+
+/*
 .contact-form {
   display: flex;
   flex-direction: column;

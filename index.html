@@ -11,13 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+
+
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> -->
+
     </script>
+    <!--
     <script type="text/javascript">
         (function () {
             emailjs.init("0Q8o_P98a2Aoo14Wy");
         })();
     </script>
+    -->
 </head>
 
 <body>
@@ -100,6 +107,7 @@
                 <div class="tab-titles">
                     <a class="tab-links active-link" onclick="opentab('skills')">Skills</a>
                     <a class="tab-links" onclick="opentab('education')">Education</a>
+                    <a class="tab-links" onclick="opentab('languages')">Languages</a>
                     <a class="tab-links" onclick="opentab('experience')">Experience</a>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
@@ -124,9 +132,21 @@
                         <p>ITC "E. Mattei" Amandola, Italy</p>
                     </ul>
                 </div>
+                <div class="tab-contents " id="languages">
+                    <ul>
+                        <li>Italian</li>
+                        <p>Native</p>
+                        <li>English</li>
+                        <p>Fluent</p>
+                        <li>Spanish</li>
+                        <p>Fluent</p>
+
+                    </ul>
+                </div>
                 <div class="tab-contents" id="experience">
 
-                    <p>I'm looking for my first job as developer, but you can take a look to some projects that i
+                    <p>I'm looking for my first job as developer, but if you scroll below, you can take a look to some
+                        projects that i
                         worked on
                         by myself</p>
 
@@ -183,7 +203,8 @@
         </div>
         <div class="contact-container">
             <div class="contact-details">
-                <p>Did you like my work? Let me know what you think. Use the form below, I would be happy to answer and
+                <p>Do you like my works? Let me know what you think. You can use the form below, I would be happy to
+                    answer and
                     connect with you to
                     work together! </p>
                 <li><i class='fa-solid fa-at' style="color: gold;"></i>andrebrandet93@gmail.com</li>
@@ -194,6 +215,31 @@
                     <i class="fa-brands fa-github fa-lg"></i>
                 </div>
             </div>
+
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Enter your full name" id="name" class="item" autocomplete="off">
+                        <div class="error-txt">Name can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Enter your email" id="email" class="item" autocomplete="off">
+                        <div class="error-txt email">Email address can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                        <div class="error-txt">Subject can't be blank</div>
+                    </div>
+                    <div class="textarea-field field">
+                        <textarea name="" id="message" cols="30" rows="2" placeholder="Enter your message" class="item"
+                            autocomplete="off" style="resize: none"></textarea>
+                        <div class="error-txt">Message can't be blank</div>
+
+                    </div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+            <!--
             <div class="contact-form">
                 <input type="text" id="name" class="form-name" placeholder="Enter your name" required>
                 <input type="text" id="email" class="form-email" placeholder="Enter your email" required>
@@ -201,13 +247,15 @@
                 <button class="form-button" onclick="sendMail()">Send</button>
 
             </div>
+        -->
         </div>
         <footer>
             Andrea Brandetti Frontend Developer
         </footer>
 
     </section>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 
