@@ -19,15 +19,41 @@ window.onscroll = () => {
     })
 }
 
+// function to close the mobile navigation when the user clicks on navigation links
 
-/* Hamburger Nav */
+document.querySelectorAll('.navbar a, .logo').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('check').checked = false; 
+    });
+});
 
-function toggleMenu() {
-    const menu= document.querySelector(".menu-links")
-    const icon = document.querySelector(".hamburger-icon")
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
-}
+
+/*
+
+document.querySelectorAll('header nav a, .logo').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+            setTimeout(() => {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }, 150);
+        }
+    });
+});
+
+
+*/
+
+
+
+
+
+
+
+
 
 /* About: Show Content*/
 
@@ -111,7 +137,7 @@ function checkInputs() {
         });
     }
 }
-// 
+
 
 function checkEmail () {
     const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
@@ -150,45 +176,3 @@ return false
 })
 
 
-/*
-function sendMail() {
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
-
-    // Verifica se i campi richiesti sono compilati
-    if (!name || !email || !message) {
-        alert('Please fill in all the required fields');
-        return;
-    }
-
-    // Verifica se l'indirizzo email è valido
-    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email.match(emailRegex)) {
-        alert('Please enter a valid email address');
-        return;
-    }
-
-    let params = {
-        name: name,
-        email: email,
-        message: message
-    };
-
-    const serviceID = "service_6b6cjmb";
-    const templateID = "template_iq5so22";
-
-    emailjs.send(serviceID, templateID, params)
-        .then(res => {
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
-            console.log(res);
-            alert('Your message sent successfully');
-        })
-        .catch(err => {
-            console.log(err);
-            alert('Error sending message. Please try again.');
-        });
-}
-*/

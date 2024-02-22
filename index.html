@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Brandetti - Frontend Developer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -64,14 +66,13 @@
                     <div class="social-icons">
                         <a class="fa-brands fa-instagram fa-lg" href="https://www.instagram.com/andreabrandetti/"
                             target="_blank"></a>
-                        <a class="fa-brands fa-linkedin-in fa-lg" href="https://github.com/brandijsen"
-                            target="_blank"></a>
-                        <a class="fa-brands fa-github fa-lg"
+                        <a class="fa-brands fa-linkedin-in fa-lg"
                             href="https://www.linkedin.com/in/andrea-brandetti-5672a327a/" target="_blank"></a>
+                        <a class="fa-brands fa-github fa-lg" href="https://github.com/brandijsen" target="_blank"></a>
                     </div>
-                    <button class="cv-btn" onclick="window.open('/assets/CV.pdf', '_blank')" target="_blank">Download
+                    <button class="cv-btn" onclick="window.open('/assets/resume.pdf', '_blank')"
+                        target="_blank">Download
                         CV</button>
-
                 </div>
             </div>
         </div>
@@ -83,7 +84,7 @@
         </div>
         <div class="about-container">
             <div class="pic-container">
-                <img src="./assets/photo.jpg" alt="" class="profile-pic">
+                <img src="./assets/coding.jpg" alt="" class="about-pic">
             </div>
             <div class="about-details">
                 <div class="description">
@@ -156,22 +157,27 @@
         </div>
         <div class="projects-container">
             <div class="project">
-                <img src="assets/photo.jpg" alt="">
+                <img src="assets/comingSoon3.jpg" alt="">
                 <div class="layer">
-                    <h3>CITY SCORE</h3>
+                    <h2>CITY SCORE</h2>
+
                     <p>Are you thinking about moving? This app allows you to check the livability parameters
                         of your next destination.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="#projects"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>COMING SOON</h3>
+
                 </div>
 
             </div>
             <div class="project">
-                <img src="assets/photo.jpg" alt="">
+                <img src="assets/comingSoon.jpg" alt="">
                 <div class="layer">
-                    <h3>GREEN TABLE</h3>
-                    <p>Are you thinking about moving? This app allows you to check the livability parameters
-                        of your next destination.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h2>GREEN TABLE</h2>
+                    <p>"Explore a variety of tasty vegetarian recipes. From salads to desserts, find flavorful dishes to
+                        satisfy every craving.
+                        Join our community for easy, healthy cooking inspiration!"</p>
+                    <a href="#projects"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>COMING SOON</h3>
                 </div>
 
             </div>
@@ -181,45 +187,6 @@
 
 
 
-        <!--
-
-        <div class="projects-container">
-            <div class="project">
-                <h2>CityScore</h2>
-                <div class="img-container">
-                    <img class="project-img" src="./assets/photo.jpg" alt="project1">
-                    <div class="layer">Are you thinking about moving? This app allows you to check the livability
-                        parameters
-                        of your next destination.</div>
-                </div>
-
-                <div class="project-btn_container">
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Open
-                    </button>
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Github
-                    </button>
-                </div>
-            </div>
-            <div class="project">
-                <h2>GreenTable</h2>
-                <img class="project-img" src="./assets/photo.jpg" alt="project2">
-                <div class="layer">Are you thinking about moving? This app allows you to check the livability parameters
-                    of your next destination.</div>
-                <div class="project-btn_container">
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Open
-                    </button>
-                    <button class="project-btn" onclick="window.open('https://github.com/')">
-                        Github
-                    </button>
-                </div>
-            </div>
-
-
-        </div>
--->
     </section>
     <section id="contact">
 
@@ -233,12 +200,13 @@
                     connect with you to
                     work together! </p>
                 <li><i class='fa-solid fa-at' style="color: gold;"></i>andrebrandet93@gmail.com</li>
-                <li><i class="fa-solid fa-phone" style="color: gold;"></i>339 *******</li>
+                <li><i class="fa-solid fa-phone" style="color: gold;"></i>+39 339 *******</li>
                 <div class="social-icons">
                     <a class="fa-brands fa-instagram fa-lg" href="https://www.instagram.com/andreabrandetti/"
                         target="_blank"></a>
-                    <a class="fa-brands fa-linkedin-in fa-lg" href="https://github.com/brandijsen" target="_blank"></a>
-                    <a class="fa-brands fa-github fa-lg" href="https://www.linkedin.com/in/andrea-brandetti-5672a327a/"
+                    <a class="fa-brands fa-linkedin-in fa-lg"
+                        href="https://www.linkedin.com/in/andrea-brandetti-5672a327a/"></a>
+                    <a class="fa-brands fa-github fa-lg" href="https://github.com/brandijsen" target="_blank"
                         target="_blank"></a>
                 </div>
             </div>
@@ -266,15 +234,7 @@
                     <button type="submit">Send Message</button>
                 </div>
             </form>
-            <!--
-            <div class="contact-form">
-                <input type="text" id="name" class="form-name" placeholder="Enter your name" required>
-                <input type="text" id="email" class="form-email" placeholder="Enter your email" required>
-                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
-                <button class="form-button" onclick="sendMail()">Send</button>
 
-            </div>
-        -->
         </div>
         <footer>
             Andrea Brandetti Frontend Developer
