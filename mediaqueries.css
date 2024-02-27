@@ -1,10 +1,33 @@
-@media (max-width: 992px) {
-  .header {
+@media only screen and (max-width: 992px) {
+  header {
     padding: 1.3rem 5%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about .pic-container {
+    display: flex;
+    margin-right: 0;
+  }
+
+  .about-details {
+    margin-top: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .icons {
     display: inline-flex;
   }
