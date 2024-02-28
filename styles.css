@@ -50,7 +50,7 @@ body {
 }
 
 .navbar a {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -120,36 +120,37 @@ button:hover {
 
 /* Home */
 
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.main-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .pic-container {
+  justify-content: center;
   display: flex;
-  height: 500px;
-  width: 400px;
-  margin: auto 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .profile-pic {
-  border-radius: 100px;
+  border-radius: 80px;
+  height: 500px;
+  width: 350px;
+  overflow: hidden;
+  position: relative;
 }
 
 .resume-container {
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
   text-align: center;
   height: 100%;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .resume-text {
@@ -198,15 +199,33 @@ button:hover {
 
 /* About */
 
-#about {
-  display: flex;
-  flex-direction: column;
-  padding-top: 80px;
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
 }
 
-.title {
-  align-items: center;
-  letter-spacing: 1px;
+#about .pic-container {
+  height: 100%;
+  justify-content: center;
+}
+
+#about .about-pic {
+  height: 350px;
+  width: 400px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-details {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  font-size: 1rem;
 }
 
 .description {
@@ -214,41 +233,21 @@ button:hover {
   font-size: 18px;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: row;
-  min-height: 400px;
-}
-
-#about .pic-container {
-  margin-right: 3rem;
-  height: 100%;
-}
-
-#about .about-pic {
-  height: 350px;
-  width: 400px;
-  border-radius: 10px;
-}
-
-.about-details {
-  display: flex;
-  flex-direction: column;
-  min-height: 400px;
-}
-
 .tab-titles {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  gap: 3rem;
+  gap: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
 }
 
 .tab-links {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.4rem;
   transition: 0.3s;
   letter-spacing: 0.7px;
 }
@@ -261,20 +260,19 @@ button:hover {
 .tab-contents {
   display: none;
   margin-top: 20px;
-  font-size: 14px;
   width: 500px;
   height: 100%;
 }
 
 .tab-contents li {
   color: gold;
-  font-size: 18px;
+  font-size: 1.1rem;
   letter-spacing: 0.5px;
   list-style: none;
 }
 
 .tab-contents p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .tab-contents.active-tab {
@@ -375,6 +373,9 @@ button:hover {
 
 .contact-details {
   margin-right: 70px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 #contact p {
@@ -396,6 +397,8 @@ form {
   flex-direction: column;
   width: 900px;
   text-align: center;
+  position: relative;
+  margin-right: 20px;
 }
 
 .field .item {
