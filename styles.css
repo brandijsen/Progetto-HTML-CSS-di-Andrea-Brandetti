@@ -224,13 +224,12 @@ button:hover {
   flex-direction: column;
   overflow: hidden;
   position: relative;
-
   font-size: 1rem;
 }
 
 .description {
   text-align: justify;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .tab-titles {
@@ -238,8 +237,7 @@ button:hover {
   flex-direction: row;
   margin-top: 30px;
   gap: 2.5rem;
-  position: relative;
-  overflow: hidden;
+
   align-items: center;
 }
 
@@ -259,7 +257,7 @@ button:hover {
 
 .tab-contents {
   display: none;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 500px;
   height: 100%;
 }
@@ -332,6 +330,12 @@ button:hover {
 .layer h2 {
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+.layer p {
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
 }
 
 .layer h3 {
