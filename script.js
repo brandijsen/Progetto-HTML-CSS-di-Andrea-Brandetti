@@ -28,6 +28,15 @@ document.querySelectorAll('.navbar a, .logo').forEach(link => {
 });
 
 
+
+
+
+
+
+
+
+
+
 /*
 
 document.querySelectorAll('header nav a, .logo').forEach(link => {
@@ -73,6 +82,27 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab")
     }, 300)
 }
+
+
+document.querySelectorAll('.projects-container .project a').forEach(link => {
+   link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const showComingSoon = link.closest('.project').querySelector('h3')
+
+    if (showComingSoon) {
+        showComingSoon.classList.add('show')
+
+         setTimeout(() => {
+                showComingSoon.classList.remove('show');
+            }, 1000);
+    }
+   }) 
+})
+
+
+
+
+
 
 /* Contact: EmailJs Service */
 
