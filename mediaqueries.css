@@ -79,9 +79,7 @@
     height: 100%;
   }
 
-  .contact-container {
-    margin-bottom: 300px;
-  }
+
 }
 
 @media only screen and (orientation: landscape) and (max-width: 900px) {
