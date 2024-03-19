@@ -53,7 +53,7 @@ body {
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 2.5rem;
 }
 
@@ -251,7 +251,7 @@ section {
   font-size: 1.4rem;
   transition: 0.3s;
   letter-spacing: 0.7px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .tab-links:hover,
@@ -491,4 +491,5 @@ footer {
   text-align: center;
   margin-top: 35px;
   align-items: center;
+  font-weight: 600;
 }
