@@ -387,6 +387,7 @@ section {
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
 }
 
 .contact-details {
