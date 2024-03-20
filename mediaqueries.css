@@ -1,6 +1,6 @@
 /* Tablet css */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1300px) {
   * {
     margin: 0;
     padding: 0;
@@ -41,17 +41,23 @@
 
   /* Home */
   #home {
-    height: 600px;
+    height: 850px;
+  }
+
+  .home-container {
+    grid-template-columns: none;
+    gap: 50px;
   }
 
   /* About */
 
   #about {
-    height: 750px;
+    height: 1050px;
   }
 
-  #about .pic-container {
-    width: 400px;
+  .about-container {
+    grid-template-columns: none;
+    gap: 40px;
   }
 
   .tab-titles {
@@ -71,6 +77,10 @@
     height: 100%;
   }
 
+  .projects-container {
+    grid-template-columns: none;
+  }
+
   .project {
     margin-bottom: 20px;
   }
@@ -78,8 +88,6 @@
   #contact {
     height: 100%;
   }
-
-
 }
 
 @media only screen and (orientation: landscape) and (max-width: 900px) {
@@ -356,3 +364,4 @@
     font-size: 1.1rem;
   }
 }
+
