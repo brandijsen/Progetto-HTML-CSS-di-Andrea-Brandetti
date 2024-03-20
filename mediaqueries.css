@@ -88,6 +88,11 @@
   #contact {
     height: 100%;
   }
+
+   .contact-container {
+    grid-template-columns: none;
+    gap: 40px;
+  }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 900px) {
