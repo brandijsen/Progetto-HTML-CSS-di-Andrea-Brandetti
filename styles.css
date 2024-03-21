@@ -391,7 +391,6 @@ section {
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 50px;
 }
 
 .contact-details {
@@ -399,6 +398,7 @@ section {
   margin-left: 20px;
   position: relative;
   overflow: hidden;
+  height: 353px;
 }
 
 #contact p {
