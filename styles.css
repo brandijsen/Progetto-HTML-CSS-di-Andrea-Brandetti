@@ -67,8 +67,6 @@ body {
   transition: 0.3s;
 }
 
-/* Hamburger Nav */
-
 .icons {
   position: absolute;
   right: 5%;
@@ -76,8 +74,6 @@ body {
   cursor: pointer;
   display: none;
 }
-
-/* Section */
 
 section {
   height: 650px;
@@ -495,5 +491,3 @@ footer {
   align-items: center;
   font-weight: 600;
 }
-
-

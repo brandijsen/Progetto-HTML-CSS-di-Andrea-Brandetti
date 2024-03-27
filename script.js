@@ -28,42 +28,6 @@ document.querySelectorAll('.navbar a, .logo').forEach(link => {
 });
 
 
-
-
-
-
-
-
-
-
-
-/*
-
-document.querySelectorAll('header nav a, .logo').forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        
-        if (targetSection) {
-            setTimeout(() => {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }, 150);
-        }
-    });
-});
-
-
-*/
-
-
-
-
-
-
-
-
-
 /* About: Show Content*/
 
 let tablinks = document.getElementsByClassName('tab-links');
@@ -100,11 +64,7 @@ document.querySelectorAll('.projects-container .project a').forEach(link => {
 })
 
 
-
-
-
-
-/* Contact: EmailJs Service */
+/* Contact: Email Service */
 
 const contactForm = document.querySelector('form')
 const fullName = document.getElementById('name')
