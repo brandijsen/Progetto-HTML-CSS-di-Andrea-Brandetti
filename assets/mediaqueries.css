@@ -179,7 +179,7 @@
     width: 300px;
   }
 
-  .layer h2 {
+  .layer h3 {
     margin-bottom: 20px;
   }
   .layer p {
@@ -190,11 +190,7 @@
   }
 
   .layer a {
-    margin-top: 0px;
-  }
-
-  .layer h3.show {
-    bottom: 20px;
+    margin-bottom: 10px;
   }
 
   /* Contact */
