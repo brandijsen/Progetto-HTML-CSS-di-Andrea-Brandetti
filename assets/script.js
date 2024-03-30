@@ -32,19 +32,28 @@ document.querySelectorAll('.navbar a, .logo').forEach(link => {
 
 let tablinks = document.getElementsByClassName('tab-links');
 let tabcontents = document.getElementsByClassName('tab-contents');
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
+
+function opentab(event, tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
     }
 
-    for (tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
     }
-    event.currentTarget.classList.add("active-link")
 
-    setTimeout(function() {
-    document.getElementById(tabname).classList.add("active-tab")
-    }, 300)
+    event.currentTarget.classList.add("active-link");
+
+    setTimeout(function () {
+        document.getElementById(tabname).classList.add("active-tab");
+    }, 300);
+}
+
+// Aggiungi l'event listener ai tablinks
+for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].addEventListener('click', function (event) {
+        opentab(event, tablinks[i].getAttribute('data-tab'));
+    });
 }
 
 
